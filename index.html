@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Artiklar</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="data.js"></script>
+  <script defer src="export.js"></script>
+</head>
+<body>
+
+<h1>Artikellista</h1>
+
+<div class="controls">
+  <button onclick="sortAZ()">A–Z</button>
+  <button onclick="sortByNumber()">Artikelnummer ↑</button>
+  <button onclick="exportPDF()">PDF</button>
+  <button onclick="exportImage()">Bild</button>
+</div>
+
+<table id="articleTable">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Artikelnummer</th>
+      <th>Namn</th>
+      <th>Bäst före</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<a href="add.html">Redigera artiklar</a>
+
+</body>
+</html>

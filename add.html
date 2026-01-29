@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Lägg till artikel</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="auth.js"></script>
+  <script defer src="data.js"></script>
+</head>
+<body>
+
+<h1>Lägg till artikel</h1>
+
+<form onsubmit="addArticle(event)">
+  <input required placeholder="Artikelnummer" id="number">
+  <input required placeholder="Namn" id="name">
+  <input required type="date" id="date">
+  <button>Lägg till</button>
+</form>
+
+<h2>Ta bort</h2>
+<ul id="deleteList"></ul>
+
+<a href="index.html">Tillbaka</a>
+
+</body>
+</html>
